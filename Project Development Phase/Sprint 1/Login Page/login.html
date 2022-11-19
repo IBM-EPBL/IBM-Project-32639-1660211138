@@ -2,11 +2,12 @@
 <html>  
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Login form </title>
+<title> Login Page </title>
 <style>  
 Body {
   font-family: Calibri, Helvetica, sans-serif;
-  background-color:#ff99ff;
+  background-color:white;
+  background-image: url('https://uploads-ssl.webflow.com/60e3caa50ec2a701bbf83598/61413ba6e2c7cb3fc42d5249_60c025e054f2267b7e657af5_60a30e27845e16729afaec26_shutterstock_1861448179-min.jpeg');"
 }
 button {  
        background-color:#c3e3dc;  
@@ -17,7 +18,7 @@ button {
         border: none;  
         cursor: pointer;  
          }  
-form {  
+form  button{  
         border: 3px solid #f156189;  
     }  
 input[type=text], input[type=password] {  
@@ -39,25 +40,33 @@ button:hover {
        
    
 .container {  
-        padding: 25px;  
-<!--         background-color:pink; -->
-    }  
+        padding: 65px;  
+<!--    background-color:pink; -->
+       
+        
+ 
+}
+
+
 </style>  
 </head>  
 <body>  
-    <center> <h1>LOGIN PAGE </h1> </center>  
+    <center> <h1 style="color:white">Login Form</h1> </center>  
     <form>
         <div class="container">  
-            <label>Username : </label>  
+            <label style="color:white" >Username : </label>  
             <input type="text" placeholder="Enter Username" name="username" required>
-            <label>Password : </label>  
+            <label style="color:white">Password : </label>  
             <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button>  
-            <input type="checkbox" checked="checked"> Remember me  
+            <button type="submit">Login</button>
+            
+            <input type="checkbox"checked="checked"> 
+            <label style="color:white">Remember me</label>  
             <button type="button" class="cancelbtn"> Cancel</button>  
             <a href="#"> Forgot password? </a>
 
         </div>  
-    </form>    
+    </form>  
+         
 </body>    
 </html>
